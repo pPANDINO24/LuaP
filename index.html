@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuaP - The Luau Fork</title>
+    <style>
+        /* CSS Variables for easy color theme changes */
+        :root {
+            --primary-blue: #007ACC;
+            --primary-hover: #005A9E;
+            --bg-dark: #121212;
+            --bg-card: #1E1E1E;
+            --text-main: #E0E0E0;
+            --text-muted: #A0A0A0;
+        }
+
+        /* Global Reset and Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Container Layout */
+        .hero-container {
+            text-align: center;
+            max-width: 800px;
+            padding: 3rem 2rem;
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #333;
+        }
+
+        /* Typography Styles */
+        h1 {
+            font-size: 4rem;
+            color: #FFFFFF;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .author-tag {
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            padding: 0 1rem;
+        }
+
+        /* Button Layout & Styling */
+        .btn-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn-exe {
+            background-color: var(--primary-blue);
+            color: #FFFFFF;
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-exe:hover {
+            background-color: var(--primary-hover);
+            border-color: var(--primary-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0, 122, 204, 0.4);
+        }
+
+        .btn-source {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 2px solid #555;
+        }
+
+        .btn-source:hover {
+            background-color: #333;
+            border-color: #777;
+            transform: translateY(-3px);
+        }
+
+        /* Footer Styles */
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* SVG Icon styling */
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-container">
+        <h1>LuaP</h1>
+        <span class="author-tag">Forked & Maintained by pPANDINO24</span>
+        
+        <p class="description">
+            A fast, safe, and gradually typed embeddable scripting language derived from Luau. 
+            Download the latest compiled release or build it yourself from the source code.
+        </p>
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-exe">
+                <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                Download .exe
+            </a>
+
+            <a href="#" class="btn btn-source">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.394.1 2.646.64.699 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                Source Code
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 pPANDINO24. Built on top of Luau.
+    </footer>
+
+</body>
+</html>
